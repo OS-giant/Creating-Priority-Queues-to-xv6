@@ -101,7 +101,7 @@ int sys_cps(void){
 int sys_chpr(void){
   int pid, pr;
   if(argint(0, &pid) < 0) return -1;
-  if(argint(0, &pr) < 0) return -1;
+  if(argint(1, &pr) < 0) return -1;
 
   return chpr(pid, pr);
 }
@@ -117,7 +117,7 @@ int sys_wtp(void){
 int sys_changeTicket(void){
   int pid, ticket;
   if(argint(0, &pid) < 0) return -1;
-  if(argint(0, &ticket) < 0) return -1;
+  if(argint(1, &ticket) < 0) return -1;
 
   return proc_ticket(pid, ticket);
 }

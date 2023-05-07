@@ -12029,11 +12029,11 @@ int sys_chpr(void){
 80105f95:	83 c4 10             	add    $0x10,%esp
 80105f98:	85 c0                	test   %eax,%eax
 80105f9a:	78 2c                	js     80105fc8 <sys_chpr+0x48>
-  if(argint(0, &pr) < 0) return -1;
+  if(argint(1, &pr) < 0) return -1;
 80105f9c:	83 ec 08             	sub    $0x8,%esp
 80105f9f:	8d 45 f4             	lea    -0xc(%ebp),%eax
 80105fa2:	50                   	push   %eax
-80105fa3:	6a 00                	push   $0x0
+80105fa3:	6a 01                	push   $0x1
 80105fa5:	e8 86 f0 ff ff       	call   80105030 <argint>
 80105faa:	83 c4 10             	add    $0x10,%esp
 80105fad:	85 c0                	test   %eax,%eax
@@ -12112,11 +12112,11 @@ int sys_changeTicket(void){
 80106035:	83 c4 10             	add    $0x10,%esp
 80106038:	85 c0                	test   %eax,%eax
 8010603a:	78 2c                	js     80106068 <sys_changeTicket+0x48>
-  if(argint(0, &ticket) < 0) return -1;
+  if(argint(1, &ticket) < 0) return -1;
 8010603c:	83 ec 08             	sub    $0x8,%esp
 8010603f:	8d 45 f4             	lea    -0xc(%ebp),%eax
 80106042:	50                   	push   %eax
-80106043:	6a 00                	push   $0x0
+80106043:	6a 01                	push   $0x1
 80106045:	e8 e6 ef ff ff       	call   80105030 <argint>
 8010604a:	83 c4 10             	add    $0x10,%esp
 8010604d:	85 c0                	test   %eax,%eax
