@@ -107,6 +107,7 @@ extern int sys_prio(void);
 extern int sys_cps(void);
 extern int sys_chpr(void);
 extern int sys_wtp(void);
+extern int sys_changeTicket(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -134,6 +135,7 @@ static int (*syscalls[])(void) = {
 [SYS_cps]     sys_cps,
 [SYS_chpr]    sys_chpr,
 [SYS_wtp]     sys_wtp,
+[SYS_changeTicket] sys_changeTicket,
 };
 
 void

@@ -14,7 +14,7 @@
 00000000 ulib.c
 00000000 printf.c
 000004c0 printint
-00000918 digits.1094
+00000918 digits.1097
 00000000 umalloc.c
 00000c00 freep
 00000c04 base
@@ -45,6 +45,7 @@
 00000000 main
 000001c0 strcmp
 0000046b dup
+000004b3 changeTicket
 000004ab wtp
 00000c20 buf
 000004a3 chpr

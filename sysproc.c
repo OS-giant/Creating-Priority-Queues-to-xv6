@@ -113,3 +113,11 @@ int sys_wtp(void){
   withput_ticket_proc(pid);
   return 0;
 }
+
+int sys_changeTicket(void){
+  int pid, ticket;
+  if(argint(0, &pid) < 0) return -1;
+  if(argint(0, &ticket) < 0) return -1;
+
+  return proc_ticket(pid, ticket);
+}

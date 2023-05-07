@@ -123,6 +123,7 @@ void            yield(void);
 int             cps(void);
 int             chpr(int pid, int priority);
 void            withput_ticket_proc(int pid);
+int             proc_ticket(int pid, int ticket);
 
 // swtch.S
 void            swtch(struct context**, struct context*);

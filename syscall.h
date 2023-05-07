@@ -24,3 +24,4 @@
 #define SYS_cps    23
 #define SYS_chpr   24
 #define SYS_wtp    25
+#define SYS_changeTicket 26

@@ -603,13 +603,15 @@ SYSCALL(chpr)
  36a:	c3                   	ret    
 
 0000036b <wtp>:
+SYSCALL(wtp)
  36b:	b8 19 00 00 00       	mov    $0x19,%eax
  370:	cd 40                	int    $0x40
  372:	c3                   	ret    
- 373:	66 90                	xchg   %ax,%ax
- 375:	66 90                	xchg   %ax,%ax
- 377:	66 90                	xchg   %ax,%ax
- 379:	66 90                	xchg   %ax,%ax
+
+00000373 <changeTicket>:
+ 373:	b8 1a 00 00 00       	mov    $0x1a,%eax
+ 378:	cd 40                	int    $0x40
+ 37a:	c3                   	ret    
  37b:	66 90                	xchg   %ax,%ax
  37d:	66 90                	xchg   %ax,%ax
  37f:	90                   	nop

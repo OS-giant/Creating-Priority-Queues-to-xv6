@@ -12,11 +12,11 @@
 00000000 .debug_loc
 00000000 .debug_ranges
 00000000 sh.c
-00001960 buf.1132
+00001960 buf.1135
 00000000 ulib.c
 00000000 printf.c
 00000e60 printint
-00001368 digits.1094
+00001368 digits.1097
 00000000 umalloc.c
 000019c4 freep
 000019c8 base
@@ -65,6 +65,7 @@
 00000e0b dup
 000003f0 pipecmd
 000003a0 redircmd
+00000e53 changeTicket
 00000e4b wtp
 00000e43 chpr
 00000cd0 stat

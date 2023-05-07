@@ -27,6 +27,7 @@ int prio(void);
 int cps(void);
 int chpr(int pid, int priority);
 int wtp(int pid);
+int changeTicket(int pid, int ticket);
 
 // ulib.c
 int stat(const char*, struct stat*);

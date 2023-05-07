@@ -830,3 +830,18 @@ void withput_ticket_proc(int pid){
 
     release(&ptable.lock);
 }
+
+int proc_ticket(int pid, int ticket) {
+    struct proc *p;
+    acquire(&ptable.lock);
+
+    for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+      if(p->pid == pid){
+        p->tickets = ticket;
+        break;
+      }
+    }
+
+    release(&ptable.lock);
+    return 0;
+}
